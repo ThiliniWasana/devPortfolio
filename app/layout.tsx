@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
