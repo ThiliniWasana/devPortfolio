@@ -12,28 +12,28 @@ export const BaseInfo = {
       image: "/images/personalPortfolio.jpg",
       projectname:"Personal Portfolio",
       description: "NextJS / Tailwind CSS / TypeScript",
-      url: "#",
+      url: "https://github.com/ThiliniWasana",
     },
     {
       id: 2,
       image: "/images/agrimarket.jpg",
       projectname:"AgriMarket E-Commerce Platform",
       description: "React / TypeScript / NodeJS / MSSQL ",
-      url: "#",
+      url: "https://github.com/ThiliniWasana",
     },
     {
       id: 3,
       image: "/images/food-delivery-apps.jpg",
       projectname:"Food Ordering App",
       description: "React / NextJS / Mongo DB ",
-      url: "#",
+      url: "https://github.com/ThiliniWasana",
     },
     {
       id: 4,
       image: "/images/facemaskM.jpg",
       projectname:"Face Mask Recycling Mechine",
       description: "Arduino / C ",
-      url: "#",
+      url: "https://github.com/ThiliniWasana",
     },
     
     

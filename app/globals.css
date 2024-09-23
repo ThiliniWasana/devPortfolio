@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prociono&display=swap");
 
 :root {
-  --font-prociono: 'Prociono', serif;
+  --font-prociono: "Prociono", serif;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 }
 
 :root {
-  --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+  --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
 }
 
 body {
@@ -38,7 +38,7 @@ body {
     @apply block absolute bg-yellow-400 h-[3px] w-full transition-transform duration-300 origin-right;
 
     /* Make the underline hidden initially */
-    content: '';
+    content: "";
     transform: scaleX(0); /* Initially hidden */
     bottom: 0;
     left: 0;
@@ -58,12 +58,22 @@ body {
   .nav_link.clicked::after {
     transform: scaleX(1); /* Keep underline visible on click */
   }
- 
-  .text-bg{
-    background-image: linear-gradient(to right,#8750f7 0%,#ffff 100%);
-    background-clip:text;
+
+  .text-bg {
+    background-image: linear-gradient(to right, #8750f7 0%, #ffff 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: black;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgb(40, 1, 49);
+    border-radius: 3px;
+  }
 }

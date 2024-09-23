@@ -13,28 +13,28 @@ const Hero = () => {
     
   return (
     <section id="home">
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#0f0715] overflow-hidden relative ">
+    <div className="w-full pt-[14vh] md:pt-[12vh] h-screen bg-[#0f0715] overflow-hidden relative ">
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/*Text Content*/}
           <div>
             {/*sub heading*/}
-            <h1  className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
+            <h1 data-aos="fade-left" className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
               Hey, I'm {BaseInfo.name}
             </h1>
             {/*title */}
             <h1
-              
+              data-aos="fade-right" data-aos-delay="100"
               className="text-bg text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem]  xl:leading-[4rem] text-white"
             >
               {BaseInfo.position}
             </h1>
             {/*Description*/}
-            <p className="mt-6 text-sm md:text-base text-white text-opacity-60 text-justify">
+            <p data-aos="fade-left" data-aos-delay="200" className="mt-6 text-sm md:text-base text-white text-opacity-60 text-justify">
               {BaseInfo.description}
             </p>
             {/* Social Media Links */}
-            <div className="flex items-center space-x-4 my-6">
+            <div data-aos="fade-left" data-aos-delay="200" className="flex items-center space-x-4 my-6">
               <a
                 href="https://www.facebook.com/thilini.wasana.94617999?mibextid=ZbWKwL"
                 target="_blank"
@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
 
             {/*Button*/}
-            <div className="flex  items-center mt-8">
+            <div data-aos="fade-left" data-aos-delay="200" className="flex  items-center mt-8">
             <a
                 href="/ThiliniWasana-SE.pdf" // Path to  CV in the public directory
                 download
@@ -82,12 +82,13 @@ const Hero = () => {
       </div>
           </div>
           {/*image content*/}
-          <div className="mx-auto hidden lg:block rounded-[1rem] overflow-x-hidden">
+          <div data-aos="fade-zoom-in" data-aos-delay="200" className="mx-auto  rounded-[1rem] overflow-x-hidden">
             <Image
               src={BaseInfo.profilePic}
               alt={BaseInfo.name}
               width={380}
               height={380}
+              className="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] object-cover rounded-full"
               
             />
           </div>

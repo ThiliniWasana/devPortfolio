@@ -24,8 +24,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Webdev Portfolio",
-  description: "Webdev portfolio with next js",
+  title: "Thilini|Personal Portfolio",
+  description: "Full Stack Developer, undergraduate student at University of Moratuwa",
+  icons: {
+    icon: 'favicon.ico',  // You can also specify multiple sizes
+    shortcut: 'favicon-16x16.png',
+    
+  }
 };
 
 export default function RootLayout({
@@ -34,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="custom-scrollbar">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > 
