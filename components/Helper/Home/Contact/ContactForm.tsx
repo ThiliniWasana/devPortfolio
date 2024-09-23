@@ -23,7 +23,7 @@ const ContactForm = () => {
     event.preventDefault();
 
     const formData = new FormData(formRef.current!);
-    const { data, error } = await handleSubmit(formData);
+    const { error } = await handleSubmit(formData);
 
     if (error) {
       toast.error(error);

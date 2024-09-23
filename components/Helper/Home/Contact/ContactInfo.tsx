@@ -22,8 +22,8 @@ const ContactInfo = () => {
           Thank you for taking the time to visit!
         </h2>
         <p className="mt-4 text-lg">
-          Feel free to reach out through this form for any inquiries or
-          opportunities. I'd be happy to connect!
+          {`Feel free to reach out through this form for any inquiries or
+          opportunities. I'd be happy to connect!`}
         </p>
       </div>
     </div>

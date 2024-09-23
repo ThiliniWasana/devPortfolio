@@ -1,4 +1,4 @@
-import Hero from '@/components/Helper/Home/Hero/Hero'
+
 import Home from '@/components/Helper/Home/Home'
 import React from 'react'
 

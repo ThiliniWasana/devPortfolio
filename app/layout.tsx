@@ -6,11 +6,7 @@ import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
 import { Toaster } from "react-hot-toast";
 
-const ibmPlexSans = IBM_Plex_Sans({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-  variable: "--font-ibm-plex-sans", // Use this variable for custom styling
-});
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

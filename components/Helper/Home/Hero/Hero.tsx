@@ -20,7 +20,7 @@ const Hero = () => {
           <div>
             {/*sub heading*/}
             <h1 data-aos="fade-left" className="text-2xl md:text-3xl lg:text-4xl mb-5 text-gray-300 font-semibold">
-              Hey, I'm {BaseInfo.name}
+              {`Hey, I'm`} {BaseInfo.name}
             </h1>
             {/*title */}
             <h1
