@@ -2,26 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Prociono&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --font-prociono: 'Prociono', serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-sans;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.font-prociono {
+  font-family: var(--font-prociono);
+}
+
+:root {
+  --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  @apply font-sans;
+  font-family: var(--font-ibm-plex-sans); /* Set IBM Plex Sans as the default */
+}
+
+@layer component {
+  .nav_link {
+    font-family: var(--font-ibm-plex-sans);
+    @apply relative text-base font-medium w-fit text-white; /* Base text styling */
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom effect */
   }
+
+  /* The underline pseudo-element */
+  .nav_link::after {
+    @apply block absolute bg-yellow-400 h-[3px] w-full transition-transform duration-300 origin-right;
+
+    /* Make the underline hidden initially */
+    content: '';
+    transform: scaleX(0); /* Initially hidden */
+    bottom: 0;
+    left: 0;
+  }
+
+  /* On hover, zoom in the text a bit */
+  .nav_link:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+
+  /* When hovering, make the underline visible */
+  .nav_link:hover::after {
+    transform: scaleX(1); /* Scale underline to full width */
+  }
+
+  /* When clicked, keep the underline visible */
+  .nav_link.clicked::after {
+    transform: scaleX(1); /* Keep underline visible on click */
+  }
+ 
+  .text-bg{
+    background-image: linear-gradient(to right,#8750f7 0%,#ffff 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 }
