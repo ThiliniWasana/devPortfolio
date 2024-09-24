@@ -34,7 +34,7 @@ const Hero = () => {
               {BaseInfo.description}
             </p>
             {/* Social Media Links */}
-            <div data-aos="fade-left" data-aos-delay="200" className="flex items-center space-x-4 my-6">
+            <div data-aos="fade-left" data-aos-delay="100" className="flex items-center space-x-4 my-6">
               <a
                 href="https://www.facebook.com/thilini.wasana.94617999?mibextid=ZbWKwL"
                 target="_blank"
@@ -44,7 +44,7 @@ const Hero = () => {
                 <FaFacebookF size={20} />
               </a>
               <a
-                href="https://www.instagram.com/thilinii_"
+                href="https://www.instagram.com/thilinii_?igsh=eWtzMDh1bWVlaThs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white p-3 rounded-full text-pink-600 hover:text-pink-800 transition"
