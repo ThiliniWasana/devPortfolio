@@ -44,7 +44,7 @@ const Hero = () => {
                 <FaFacebookF size={20} />
               </a>
               <a
-                href="https://www.instagram.com/thilinii_?igsh=eWtzMDh1bWVlaThs"
+                href="https://www.instagram.com/thilinii___?igsh=eWtzMDh1bWVlaThs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white p-3 rounded-full text-pink-600 hover:text-pink-800 transition"
