@@ -34,7 +34,7 @@ const Project = () => {
         {/* Scrollable container */}
         <div
           ref={scrollRef}
-          className='flex overflow-x-auto space-x-6 scroll-smooth'
+          className='flex flex-col md:flex-row space-x-0 md:space-x-6 overflow-hidden'
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {/* Hide scrollbar for webkit browsers */}
@@ -46,7 +46,7 @@ const Project = () => {
           {projectData.map((project) => (
             <div
               key={project.id}
-              className='min-w-[calc(100%/1.1)] sm:min-w-[calc(100%/2-24px)] md:min-w-[calc(100%/3-24px)] bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all duration-300 flex flex-col items-center text-center'
+              className='flex-shrink-0 w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all duration-300 flex flex-col items-center text-center mb-6 md:mb-0'
               style={{ height: '400px' }} // Fixed height for each card
             >
               <Link href={project.url} target='_blank'>
@@ -64,7 +64,8 @@ const Project = () => {
           ))}
         </div>
       </div>
-
+      
+      <div className="hidden md:block">
       {/* Left arrow button - positioned relative to the page background */}
       <button
         onClick={scrollLeft}
@@ -82,6 +83,7 @@ const Project = () => {
       >
         <FaChevronRight />
       </button>
+      </div>
     </div>
     </section>
   );

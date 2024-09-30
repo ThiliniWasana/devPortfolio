@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "@/components/Helper/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Helper/Home/Footer/Footer";
 import { Toaster } from "react-hot-toast";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 
 
@@ -42,6 +43,7 @@ export default function RootLayout({
         {children}
         <Toaster position="top-right"/>
         <Footer/>
+        <ScrollToTop/>
       </body>
     </html>
   );
