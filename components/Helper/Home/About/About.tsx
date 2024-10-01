@@ -16,7 +16,7 @@ const About = () => {
           operations, streamlining processes to deliver high-quality, dependable
           software solutions.
         </p>
-        <div className=" flex flex-col md:flex-row items-center justify-center mt-9 space-y-6 md:space-y-0 md:space-x-8">
+        <div  data-aos="fade-right" data-aos-delay="100"  className=" flex flex-col md:flex-row items-center justify-center mt-9 space-y-6 md:space-y-0 md:space-x-8">
           <div className="flex items-center space-x-2 ">
             <div className="w-7 h-7 bg-blue-800 flex flex-col items-center justify-center">
               <FaCheck className="text-white" />

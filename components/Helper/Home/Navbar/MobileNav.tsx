@@ -28,7 +28,6 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
               href={navlink.url}
               passHref
               onClick={() => {
-                // Close the navigation after clicking the link
                 closeNav();
               }}
             >

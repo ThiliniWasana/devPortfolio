@@ -35,7 +35,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-[#140c1c] round-lg p-4 sm:p-10" ref={ref}>
+    <div data-aos="zoom-in" className="bg-[#140c1c] round-lg p-4 sm:p-10" ref={ref}>
       <form
         ref={formRef}
         className="mt-8 block w-full overflow-hidden"
